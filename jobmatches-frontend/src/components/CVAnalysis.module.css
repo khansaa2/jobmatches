@@ -1,0 +1,86 @@
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 8px;
+}
+
+.submitButton {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.predictions {
+    margin-top: 2rem;
+}
+
+.predictions h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.predictionCard {
+    margin-bottom: 1rem;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.predictionCard:hover {
+    transform: translateY(-2px);
+}
+
+.predictionCard .card-title {
+    color: #3498db;
+    font-size: 1.2rem;
+}
+
+.predictionCard .card-text {
+    color: #7f8c8d;
+}
+
+.modeSelector {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.modeSelector button {
+    min-width: 120px;
+}
+
+/* File upload styles */
+.fileUpload {
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.fileUpload:hover {
+    border-color: #3498db;
+}
+
+.fileUpload input[type="file"] {
+    display: none;
+}
+
+.fileInfo {
+    margin-top: 1rem;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+} 

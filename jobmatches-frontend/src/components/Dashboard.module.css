@@ -1,0 +1,376 @@
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbarBrand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.dashboardContainer {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.cardHeader {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    border-radius: 15px 15px 0 0 !important;
+    padding: 1.25rem;
+}
+
+.cardTitle {
+    margin: 0;
+    font-weight: 600;
+}
+
+.uploadSection {
+    padding: 2rem;
+}
+
+.fileInput {
+    border: 2px dashed #e2e8f0;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fileInput:hover {
+    border-color: #6366f1;
+    background-color: #f8fafc;
+}
+
+.uploadButton {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.uploadButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.uploadButton:disabled {
+    background: #e2e8f0;
+    cursor: not-allowed;
+}
+
+.predictionsSection {
+    margin-top: 2rem;
+}
+
+.accordionItem {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.accordionButton {
+    background: white !important;
+    color: #1e293b !important;
+    font-weight: 600;
+    padding: 1.25rem;
+}
+
+.accordionButton:not(.collapsed) {
+    background: #f8fafc !important;
+    color: #4f46e5 !important;
+}
+
+.matchBadge {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+}
+
+.progressBar {
+    height: 8px;
+    border-radius: 4px;
+    background: #e2e8f0;
+}
+
+.progressBarFill {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    border-radius: 4px;
+}
+
+.jobOfferCard {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.jobOfferCard:hover {
+    border-color: #6366f1;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
+}
+
+.companyName {
+    color: #1e293b;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.jobTitle {
+    color: #4f46e5;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.jobDetails {
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+.viewDetailsButton {
+    background: transparent;
+    border: 2px solid #6366f1;
+    color: #6366f1;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.viewDetailsButton:hover {
+    background: #6366f1;
+    color: white;
+}
+
+.statsCard {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.statTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 1rem 0;
+}
+
+.statSubtitle {
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+.statChange {
+    color: #10b981;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.loadingSpinner {
+    color: #6366f1;
+}
+
+.alert {
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.alertSuccess {
+    background-color: #dcfce7;
+    border-color: #86efac;
+    color: #166534;
+}
+
+.alertError {
+    background-color: #fee2e2;
+    border-color: #fca5a5;
+    color: #991b1b;
+}
+
+.alertInfo {
+    background-color: #dbeafe;
+    border-color: #93c5fd;
+    color: #1e40af;
+}
+
+@media (max-width: 992px) {
+    .navbarBrand {
+        font-size: 1.25rem;
+    }
+    
+    .statTitle {
+        font-size: 1.5rem;
+    }
+    
+    .profileImage {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* CV Upload Styles */
+.uploadSection {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.uploadInput {
+    border: 2px dashed #dee2e6;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.uploadInput:hover {
+    border-color: #0d6efd;
+}
+
+.uploadStatus {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.uploadStatus.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.uploadStatus.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.userProfileCard {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    height: 100%;
+    position: sticky;
+    top: 2rem;
+}
+
+.profileHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profileImage {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 4px solid #6366f1;
+    padding: 4px;
+    background: white;
+    object-fit: cover;
+}
+
+.profileImagePlaceholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.userName {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.userRole {
+    color: #6366f1;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.userEmail {
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.profileSection {
+    margin-bottom: 1.5rem;
+}
+
+.profileSectionTitle {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #64748b;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+.profileInfo {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.profileInfoLabel {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-bottom: 0.25rem;
+}
+
+.profileInfoValue {
+    color: #1e293b;
+    font-weight: 500;
+}
+
+.editProfileButton {
+    background: transparent;
+    border: 2px solid #6366f1;
+    color: #6366f1;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    width: 100%;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.editProfileButton:hover {
+    background: #6366f1;
+    color: white;
+} 

@@ -1,0 +1,27 @@
+.loginContainer {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.cardBody {
+    padding: 2.5rem !important;
+}
+
+@media (max-width: 768px) {
+    .cardBody {
+        padding: 1.5rem !important;
+    }
+} 
